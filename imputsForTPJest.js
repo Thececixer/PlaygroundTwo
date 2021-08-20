@@ -86,3 +86,28 @@ ${'TpSlDiscretionNoExist'}                   | ${'1'}                 | ${'1'}  
 ${'TpSlPegNoExist'}                   | ${'1'}                 | ${'1'}                    | ${'1'}                 | ${'1'}         | ${'100'}                     | ${''}
 
 
+//** Вкладка Limit, рублевый инструмент */
+
+label                        | Price                       | lot
+${'LimittNull'}                       | ${'0'}                      | ${'0'}
+${'LimitMinimum'}                       | ${'0.01'}                      | ${'1'}
+${'LimitIncorrectByStep'}                       | ${'0.001'}                      | ${'1'}
+${'LimitIncorrectByValue'}                       | ${'.[!#$%&,-./?@^_]PasВорд'}                      | ${'1'}
+${'LimitIncorrectBylot'}                       | ${'1'}                      | ${'.[!#$%&,-./?@^_]PasВорд'}
+${'LimitIncorrectBylotStep'}                       | ${'1'}                      | ${'0.1'}
+${'LimitPreiceNotExist'}                       | ${''}                      | ${'1'}
+${'LimitLotNotExist'}                       | ${'1'}                      | ${''}
+${'LimitBigValue'}                       | ${'100000000,01'}                      | ${'100000000'}
+${'LimitNegativeNumbers'}                       | ${'-1'}                      | ${'-1'}
+
+
+//** Вкладка Market, рублевый инструмент */
+
+label                                               | lot
+${'MarketNull'}                                             | ${'0'}
+${'MarketMinimum'}                                           | ${'1'}
+${'MarketIncorrectBylot'}                                    | ${'.[!#$%&,-./?@^_]PasВорд'}
+${'MarketIncorrectBylotStep'}                                | ${'0.1'}
+${'MarketLotNotExist'}                                       | ${''}
+${'MarketBigValue'}                                          | ${'100000000'}
+${'MarketNegativeNumbers'}                                   | ${'-1'}
